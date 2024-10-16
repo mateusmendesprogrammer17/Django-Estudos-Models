@@ -1,0 +1,16 @@
+# Para arquivos de texto
+*.txt text
+
+# Para arquivos Python
+*.py text
+
+# Para arquivos de imagem
+*.png binary
+*.jpg binary
+
+
+# Para arquivos JSON
+*.json text
+
+# Para arquivos de log
+*.log binary
