@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import AlunosForm
-from .models import Aluno
+from .models import Aluno,Curso
 
 def home(request):
     if request.method == 'POST':
@@ -19,4 +19,5 @@ def lista_alunos(request):
     return render(request, 'users/lista_alunos.html', {'alunos': alunos})
 
 def cursos(request):
+    cursos = Curso.objects.all()
     return HttpResponse("Cursos")
